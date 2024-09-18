@@ -10,3 +10,19 @@
 
 # Gerar um “relatório” de desempenho: Para cada vendedor, informe se ele atingiu a meta ou não.
 
+  vendedores <- c("Arthur Silva", "Mariana Ribeiro", "Alex Moreira", "Felipe Rocha", "Rafael Oliveira", "Gabriela Fonseca", "Bruna Santos", "Camila Martins", "Ana Paula Souza", "Thiago Cardoso")
+
+  metaFuncionarios <- c(18, 25, 30, 12, 19, 22, 14, 28, 17, 9)
+  metaFuncionarios[metaFuncionarios < 15] <- 15
+
+  metas <- metaFuncionarios >= 20
+  quantidadeChegouMeta <- sum(metas)
+
+  metas[metas == TRUE] <- "Atingiu a meta"
+  metas[metas ==  FALSE] <- "Não atingiu a meta"
+
+  for (i in 1:length(vendedores)) {
+    cat(vendedores[i], "-", metas[i], "\n")
+  }
+  
+  cat("\nTotal de vendedores que atingiram a meta:", quantidadeChegouMeta, "\n")
