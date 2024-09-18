@@ -10,3 +10,6 @@
 
 # Gerar um “relatório” de desempenho: Para cada vendedor, informe se ele atingiu a meta ou não.
 
+  vendedores <- c("Arthur Silva", "Mariana Ribeiro", "Alex Moreira", "Felipe Rocha", "Rafael Oliveira", "Gabriela Fonseca", "Bruna Santos", "Camila Martins", "Ana Paula Souza", "Thiago Cardoso")
+
+  metaFuncionarios <- c(18, 25, 30, 12, 19, 22, 14, 28, 17, 9)
