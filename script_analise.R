@@ -14,3 +14,6 @@
 
   metaFuncionarios <- c(18, 25, 30, 12, 19, 22, 14, 28, 17, 9)
   metaFuncionarios[metaFuncionarios < 15] <- 15
+
+  metas <- metaFuncionarios >= 20
+  quantidadeChegouMeta <- sum(metas)
